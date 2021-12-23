@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "build-css:watch": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "css:minify": "tailwindcss -o ./public/styles.css --minify"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoncharIgor/tailwind-recipes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoncharIgor/tailwind-recipes/issues"
+  },
+  "homepage": "https://github.com/GoncharIgor/tailwind-recipes#readme"
+}
