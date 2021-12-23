@@ -32,6 +32,17 @@ Tailwind doesn't have its own set of icons
 ## transitions
 When we add to element "transform" or "transition" classes, it means that we further may apply transition or transform effects on it
 
+## Styling based on parent state: group
+When you need to style an element based on the state of some parent element,
+mark the parent with the`group` class, and use `group-*` modifiers like `group-hover` to style the target element:
+
+```html
+<a href="#" class="group block">
+    <p class="text-gray-500 group-hover:text-white">Text will be white on parent link hovered</p>
+</a>
+```
+
+## Styling based on sibling state: peer
 
 ## To Run:
 1. serve public/index.html

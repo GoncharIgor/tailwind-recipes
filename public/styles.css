@@ -450,20 +450,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .inline-block{
@@ -494,12 +494,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
-.h-32{
-  height: 8rem;
-}
-
 .h-screen{
   height: 100vh;
+}
+
+.h-32{
+  height: 8rem;
 }
 
 .w-6{
@@ -516,10 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full{
   width: 100%;
-}
-
-.grow{
-  flex-grow: 1;
 }
 
 .transform{
@@ -580,19 +576,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 99 99 / var(--tw-border-opacity));
 }
 
-.border-gray-200{
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-r-primary{
+.border-gray-200{
   --tw-border-opacity: 1;
-  border-right-color: rgb(255 99 99 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-red-500{
@@ -629,6 +620,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -637,11 +633,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-2{
@@ -656,6 +647,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Nunito;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -664,11 +660,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -814,6 +805,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.dark .dark\:bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:h-48{
     height: 12rem;
@@ -828,10 +824,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px){
   .md\:col-span-1{
     grid-column: span 1 / span 1;
-  }
-
-  .md\:col-span-2{
-    grid-column: span 2 / span 2;
   }
 
   .md\:col-span-4{
@@ -850,12 +842,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:justify-end{

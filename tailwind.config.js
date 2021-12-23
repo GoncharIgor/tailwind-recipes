@@ -2,6 +2,7 @@
 
 module.exports = {
     mode: 'jit',
+    darkMode: 'class',
     purge: ['./src/**/*.{html,js}', './public/index.html'], // remove unused styles
     content: ["./src/**/*.{html,js}"], // paths to all of your template files
     theme: {
