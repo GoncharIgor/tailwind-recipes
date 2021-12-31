@@ -21,6 +21,19 @@ then it removes all Browser default styles
 
 For usage IDE Tailwind plugins - a tailwind.condig file has to be defined
 
+## performance
+Tailwind will remove all unused classes from .css, if they are under layers: `base, components, or utilities`
+If you add any custom class not under the layer, then it will always be present in compiled .css, even if not used:
+```css
+@layer components {
+  /* This won't be included in your compiled CSS unless you actually use it */
+  .card {...}
+    }
+
+    /* This will always be included in your compiled CSS */
+    .card {...}
+```
+
 ## @apply
 extract classes into a separate directive, it works similar to @mixin in scss
 What you need - is to add it in .css file. 
@@ -31,6 +44,15 @@ Tailwind doesn't have its own set of icons
 
 ## transitions
 When we add to element "transform" or "transition" classes, it means that we further may apply transition or transform effects on it
+
+## Custom styles
+- just create new class in .css file
+- @apply to group classes together
+- override theme in config
+- arbitrary values - use custom value in defined class: `top-[117px]`, `bg-[#bada55]`
+- Arbitrary properties - like inline styles, but with the benefit of modifiers usage: `[mask-type:luminance] hover:[mask-type:alpha]`
+  (When an arbitrary value needs to contain a space, use an underscore `_` )
+- `@layer` directive to add styles to Tailwind’s base, components, and utilities layers:
 
 ## Styling based on parent state: group
 When you need to style an element based on the state of some parent element,
