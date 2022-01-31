@@ -1,7 +1,10 @@
 Main idea - design your styles in the HTML
 
 # How Tailwind works
-TLDR: your src styles and files are being processed by Tailwind CLI to make plain css output
+TLDR: Tailwind is a PostCSS plugin - your src styles and files are being processed by Tailwind CLI to make plain css output
+
+It parses CSS into an abstract syntax tree (AST); passes that AST through any number of “plugin” functions;
+and then converts that AST back into a string, which you can output to a file.
 
 When you import styles.css from public folder, and it contains default Tailwind styles,
 then it removes all Browser default styles
@@ -71,3 +74,9 @@ mark the parent with the`group` class, and use `group-*` modifiers like `group-h
 
 2. If you want to change css: change it in src/styles.css
 3. Then run `build-css`
+
+## With other plugins
+Tailwind CLI can minify and autoprefix css by itself
+But if you use Tailwind as a postcss plugin in other projects (like in Next.js), then you also need to add these plugins to postcss.config.js:
+- autoprefixer
+- cssnano

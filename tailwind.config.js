@@ -15,7 +15,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-                // bodyFont - a key to access font. Can be any name
+                // bodyFont - a customly named key to access font from html file. Can be any name
                 // "Nunito" font was imported before in styles.css
                 bodyFont: ['Nunito']
             }
